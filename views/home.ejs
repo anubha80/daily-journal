@@ -1,21 +1,23 @@
 <%- include("header") -%>
-<div class="home-container"></div>
-<h1>Home Page</h1>
-<p>
-  Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente nisi
-  dignissimos vero eius perspiciatis, magni aperiam asperiores doloremque
-  aliquam, rerum nobis eveniet quam tenetur dolor in sunt, eum ullam deleniti
-  consectetur. Beatae illo ad distinctio accusantium quod iusto laboriosam,
-  minima at totam? Illum architecto iste doloremque, fugit dolores libero
-  recusandae expedita enim animi ducimus quo placeat, magni soluta consectetur
-  reiciendis vel hic voluptate quas excepturi facilis optio, accusamus
-  blanditiis mollitia.
-</p>
-<% for (var i = 0; i < blogHeading.length; i++) { %> <% var
-first100=blogContent[i].substring(0,100)%> <% first100=first100+".." %>
-<h2><%= blogHeading[i]%></h2>
-<p class="blog-content">
-  <%= first100%><a href="/posts/<%=blogHeading[i]%>"> Read more</a>
-</p>
+<div class="mid-container">
+  <h1>Home Page</h1>
+  <p>
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente nisi
+    dignissimos vero eius perspiciatis, magni aperiam asperiores doloremque
+    aliquam, rerum nobis eveniet quam tenetur dolor in sunt, eum ullam deleniti
+    consectetur. Beatae illo ad distinctio accusantium quod iusto laboriosam,
+    minima at totam? Illum architecto iste doloremque, fugit dolores libero
+    recusandae expedita enim animi ducimus quo placeat, magni soluta consectetur
+    reiciendis vel hic voluptate quas excepturi facilis optio, accusamus
+    blanditiis mollitia.
+  </p>
+  <% for (var i = 0; i < blogHeading.length; i++) { %> <% var
+  first100=blogContent[i].substring(0,100)%> <% first100=first100+".." %>
+  <h2><%= blogHeading[i]%></h2>
+  <p class="blog-content">
+    <%= first100%><a href="/posts/<%=blogHeading[i]%>"> Read more</a>
+  </p>
 
-<% } %> <%- include("footer") -%>
+  <% } %>
+</div>
+<%- include("footer") -%>

@@ -1,11 +1,20 @@
 <%- include("header") -%>
-<h1>Compose</h1>
-<form action="/" method="post">
-  <label for="title">Title : </label>
-  <input type="text" name="title" required /> <br />
-  <label for="post">Post :</label>
-  <textarea name="post" id="post" cols="30" rows="10" required></textarea>
-  <br />
-  <button type="submit">Publish</button>
-</form>
+<div class="mid-container">
+  <h1>Compose</h1>
+  <form action="/" method="post">
+    <label for="title" class="lbl-title">Title : </label>
+    <input type="text" name="title" class="ip-title" required /> <br />
+    <label for="post" class="lbl-post">Post :</label>
+    <textarea
+      name="post"
+      id="post"
+      cols="42"
+      rows="10"
+      class="ip-post"
+      required
+    ></textarea>
+    <br />
+    <button class="btn-publish" type="submit">Publish</button>
+  </form>
+</div>
 <%- include("footer") -%>
