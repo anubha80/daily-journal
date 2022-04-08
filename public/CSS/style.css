@@ -1,0 +1,46 @@
+body{
+    margin: 0;
+    background-color: lightblue;
+}
+.blog-name, .blog-links{
+    /* height:100px; */
+}
+.blog-name{
+    float:left; 
+    background:Red;
+    width:74%;
+    height:100px;
+    padding-left: 1%;
+}
+.blog-links{
+    float:left; 
+    background:yellow;
+    width:25%;
+    height:100px;
+    text-align: center;
+}
+a{
+    text-decoration: none;
+}
+.content-container{
+    background-color: cornflowerblue;
+    padding-top: 10%;
+    padding-bottom: 5%;
+}
+footer{
+    background-color: yellowgreen;
+    padding-top: 3%;
+    padding-bottom: 3%;
+    text-align: center;
+    font-size: 15px;
+}
+p{
+    font-size: 20px;
+    text-align: justify;
+}
+.blog-content{
+    background-color: antiquewhite;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
